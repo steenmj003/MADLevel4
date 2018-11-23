@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    tools:context="com.hva.joris.gamebacklog.DetailsActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="356dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/titleEditField"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/platformEditField"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Platform"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/notesEditField"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Notes"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Status" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:background="?attr/colorButtonNormal"
+                android:entries="@array/status_array"
+                android:popupBackground="?android:attr/colorButtonNormal" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/saveEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+</android.support.design.widget.CoordinatorLayout>
